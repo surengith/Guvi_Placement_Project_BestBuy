@@ -200,6 +200,10 @@ public class BaseClass {
 //		workbook.close();
 //		return value;
 //	}
+	
+	public static void sleep(int value) throws InterruptedException {
+		Thread.sleep(value);
+	}
 
 	public static void quit() {
 		driver.quit();

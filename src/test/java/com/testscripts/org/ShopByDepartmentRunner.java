@@ -1,5 +1,7 @@
 package com.testscripts.org;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 import com.pages.org.ShopByDepartment;
 import com.utils.org.BaseClass;
@@ -9,7 +11,7 @@ public class ShopByDepartmentRunner extends BaseClass {
 	public static ShopByDepartment sbd;
 
 	@Test
-	public void shopByDepartment() throws InterruptedException {
+	public void shopByDepartment() throws InterruptedException, IOException {
 		sbd = new ShopByDepartment(driver);
 		sbd.getMenuButton();
 		clickOnElement(sbd.getMenuButton());
@@ -28,13 +30,15 @@ public class ShopByDepartmentRunner extends BaseClass {
 		sbd.getSelectProductRangeButton();
 		clickOnElement(sbd.getSelectProductRangeButton());
 
-		Thread.sleep(10000);
+		sleep(10000);
 		explicitlyWaitAll(15, sbd.getSelectProductAddToCart());
 		clickOnElement(sbd.getSelectProductAddToCart());
 
 		explicitlyWait(10, sbd.getProductGoToCart());
 		clickOnElement(sbd.getProductGoToCart());
 
+		takeScreenshot("shopByDepartment");
+		sleep(3000);
 		pageSource("Epson - Pro EX11000 3LCD Full HD 1080p Wireless Laser Projector - Black",
 				"Shop by department Product has been added successfully",
 				"Shop by department Product not added to the cart");

@@ -36,7 +36,6 @@ public class CreateAccountRunner extends BaseClass {
 		implicitlyWait(5);
 		String url = ConfigProperty.getUrl();
 		launchUrl(url);
-		ExtentReport.extentReport().createTest(url);
 	}
 
 	@BeforeMethod

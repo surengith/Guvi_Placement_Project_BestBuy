@@ -23,7 +23,7 @@ public class SearchItems extends BaseClass {
 	@FindBy(xpath = "//div[@class='list-wrapper top-border']/ol/li//child::h4/a[@href]")
 	private List<WebElement> listOfProducts;
 
-	@FindBy(xpath = "(//button[@data-button-state='ADD_TO_CART'])[4]")
+	@FindBy(xpath = "(//button[@data-button-state='ADD_TO_CART'])[1]")
 	private WebElement addToCart;
 
 	@FindBy(xpath = "//a[text()='Go to Cart']")

@@ -1,122 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-11T19:32:36 IST" name="Suite" finished-at="2024-02-11T19:38:10 IST" duration-ms="333804">
+  <suite started-at="2024-02-15T14:07:17 IST" name="Suite" finished-at="2024-02-15T14:09:11 IST" duration-ms="114384">
     <groups>
     </groups>
-    <test started-at="2024-02-11T19:32:36 IST" name="Test" finished-at="2024-02-11T19:38:10 IST" duration-ms="333804">
-      <class name="com.testscripts.org.ShopByDepartmentRunner">
-        <test-method signature="shopByDepartment()[pri:0, instance:com.testscripts.org.ShopByDepartmentRunner@4310d43]" started-at="2024-02-11T19:35:29 IST" name="shopByDepartment" finished-at="2024-02-11T19:36:22 IST" duration-ms="53730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shopByDepartment -->
-      </class> <!-- com.testscripts.org.ShopByDepartmentRunner -->
+    <test started-at="2024-02-15T14:07:17 IST" name="Test" finished-at="2024-02-15T14:09:11 IST" duration-ms="114384">
       <class name="com.testscripts.org.SearchItemRunner">
-        <test-method signature="searchAddToshoppingCart()[pri:0, instance:com.testscripts.org.SearchItemRunner@61001b64]" started-at="2024-02-11T19:35:06 IST" name="searchAddToshoppingCart" finished-at="2024-02-11T19:35:29 IST" duration-ms="22367" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button" type="button" data-sku-id="6552870" data-button-state="ADD_TO_CART" style="padding:0 8px;margin-bottom:8px;margin-left:0px">...</button> is not clickable at point (1177, 15). Other element would receive the click: <div class="top-nav">...</div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61e6f4224081e01fcb912c6107fab8ec, clickElement {id=b2666df7-c534-482a-952c-44e979e4d05f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\SUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49783}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49783/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (61e6f4224081e01fcb912c6107fab8ec)] -> xpath: (//button[@data-button-state='ADD_TO_CART'])[4]]
-Session ID: 61e6f4224081e01fcb912c6107fab8ec]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button" type="button" data-sku-id="6552870" data-button-state="ADD_TO_CART" style="padding:0 8px;margin-bottom:8px;margin-left:0px">...</button> is not clickable at point (1177, 15). Other element would receive the click: <div class="top-nav">...</div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61e6f4224081e01fcb912c6107fab8ec, clickElement {id=b2666df7-c534-482a-952c-44e979e4d05f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\SUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49783}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49783/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (61e6f4224081e01fcb912c6107fab8ec)] -> xpath: (//button[@data-button-state='ADD_TO_CART'])[4]]
-Session ID: 61e6f4224081e01fcb912c6107fab8ec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.utils.org.BaseClass.clickOnElement(BaseClass.java:100)
-at com.testscripts.org.SearchItemRunner.searchAddToshoppingCart(SearchItemRunner.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="searchAddToshoppingCart()[pri:0, instance:com.testscripts.org.SearchItemRunner@6253c26]" started-at="2024-02-15T14:08:11 IST" name="searchAddToshoppingCart" finished-at="2024-02-15T14:09:11 IST" duration-ms="60949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAddToshoppingCart -->
       </class> <!-- com.testscripts.org.SearchItemRunner -->
-      <class name="com.testscripts.org.CheckoutAndPaymentProcessRunner">
-        <test-method signature="checkoutLoginProcess()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@26e356f0]" started-at="2024-02-11T19:37:30 IST" name="checkoutLoginProcess" finished-at="2024-02-11T19:37:38 IST" duration-ms="8542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutLoginProcess -->
-        <test-method signature="paymentInformation()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@26e356f0]" started-at="2024-02-11T19:37:38 IST" name="paymentInformation" finished-at="2024-02-11T19:38:09 IST" duration-ms="30543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- paymentInformation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@26e356f0]" started-at="2024-02-11T19:38:09 IST" name="tearDown" finished-at="2024-02-11T19:38:10 IST" duration-ms="1078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testscripts.org.CheckoutAndPaymentProcessRunner -->
-      <class name="com.testscripts.org.SignUpRunner">
-        <test-method signature="signUpValidCredentials()[pri:0, instance:com.testscripts.org.SignUpRunner@47e2e487]" started-at="2024-02-11T19:34:25 IST" name="signUpValidCredentials" finished-at="2024-02-11T19:34:38 IST" duration-ms="12778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpValidCredentials -->
-        <test-method signature="signUpInValidCredentials()[pri:1, instance:com.testscripts.org.SignUpRunner@47e2e487]" started-at="2024-02-11T19:34:38 IST" name="signUpInValidCredentials" finished-at="2024-02-11T19:34:51 IST" duration-ms="12959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpInValidCredentials -->
-        <test-method signature="signUpEmptyCredentials()[pri:2, instance:com.testscripts.org.SignUpRunner@47e2e487]" started-at="2024-02-11T19:34:51 IST" name="signUpEmptyCredentials" finished-at="2024-02-11T19:35:05 IST" duration-ms="14231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpEmptyCredentials -->
-      </class> <!-- com.testscripts.org.SignUpRunner -->
       <class name="com.testscripts.org.CreateAccountRunner">
-        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:32:36 IST" name="driverSetup" finished-at="2024-02-11T19:32:41 IST" duration-ms="4661" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:17 IST" name="driverSetup" finished-at="2024-02-15T14:07:22 IST" duration-ms="5098" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,11 +24,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:32:41 IST" name="urlVerify" finished-at="2024-02-11T19:32:51 IST" duration-ms="10431" status="PASS">
+        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:22 IST" name="urlVerify" finished-at="2024-02-15T14:07:31 IST" duration-ms="8386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlVerify -->
-        <test-method signature="createAccountValidCredentials(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:32:51 IST" name="createAccountValidCredentials" finished-at="2024-02-11T19:33:21 IST" duration-ms="29752" status="PASS">
+        <test-method signature="createAccountValidCredentials(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:31 IST" name="createAccountValidCredentials" finished-at="2024-02-15T14:08:02 IST" duration-ms="31668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,54 +39,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountValidCredentials -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:33:21 IST" name="urlVerify" finished-at="2024-02-11T19:33:31 IST" duration-ms="10149" status="PASS">
+        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:08:02 IST" name="urlVerify" finished-at="2024-02-15T14:08:11 IST" duration-ms="8185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlVerify -->
-        <test-method signature="reader()[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:33:31 IST" name="reader" finished-at="2024-02-11T19:33:31 IST" duration-ms="2" status="PASS">
+        <test-method signature="reader()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:08:11 IST" name="reader" finished-at="2024-02-15T14:08:11 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reader -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:33:31 IST" name="urlVerify" finished-at="2024-02-11T19:33:41 IST" duration-ms="10096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlVerify -->
-        <test-method signature="createAccountInvalidCredentials(java.lang.String)[pri:1, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:33:41 IST" name="createAccountInvalidCredentials" finished-at="2024-02-11T19:34:01 IST" duration-ms="19477" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7894561231]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccountInvalidCredentials -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:34:01 IST" name="urlVerify" finished-at="2024-02-11T19:34:12 IST" duration-ms="11161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlVerify -->
-        <test-method signature="createAccountEmptyCredentials()[pri:2, instance:com.testscripts.org.CreateAccountRunner@290222c1]" started-at="2024-02-11T19:34:12 IST" name="createAccountEmptyCredentials" finished-at="2024-02-11T19:34:25 IST" duration-ms="13612" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccountEmptyCredentials -->
       </class> <!-- com.testscripts.org.CreateAccountRunner -->
-      <class name="com.testscripts.org.MenuValidationRunner">
-        <test-method signature="topLinkVerification()[pri:0, instance:com.testscripts.org.MenuValidationRunner@201a4587]" started-at="2024-02-11T19:35:05 IST" name="topLinkVerification" finished-at="2024-02-11T19:35:06 IST" duration-ms="501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- topLinkVerification -->
-        <test-method signature="bottomLinkVerification()[pri:1, instance:com.testscripts.org.MenuValidationRunner@201a4587]" started-at="2024-02-11T19:35:06 IST" name="bottomLinkVerification" finished-at="2024-02-11T19:35:06 IST" duration-ms="518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bottomLinkVerification -->
-      </class> <!-- com.testscripts.org.MenuValidationRunner -->
-      <class name="com.testscripts.org.ShopByBrandRunner">
-        <test-method signature="shopByBrands()[pri:0, instance:com.testscripts.org.ShopByBrandRunner@54a7079e]" started-at="2024-02-11T19:36:22 IST" name="shopByBrands" finished-at="2024-02-11T19:37:30 IST" duration-ms="67095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shopByBrands -->
-      </class> <!-- com.testscripts.org.ShopByBrandRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

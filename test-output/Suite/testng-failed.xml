@@ -9,6 +9,16 @@
           <include name="searchAddToshoppingCart"/>
         </methods>
       </class> <!-- com.testscripts.org.SearchItemRunner -->
+      <class name="com.testscripts.org.CreateAccountRunner">
+        <parameter name="invalidphonenumber" value="7894561231"/>
+        <parameter name="validphonenumber" value="9443352021"/>
+        <methods>
+          <include name="urlVerify"/>
+          <include name="createAccountValidCredentials"/>
+          <include name="driverSetup"/>
+          <include name="reader"/>
+        </methods>
+      </class> <!-- com.testscripts.org.CreateAccountRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

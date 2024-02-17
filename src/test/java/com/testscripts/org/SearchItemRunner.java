@@ -4,8 +4,12 @@ import java.io.IOException;
 
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.pages.org.SearchItems;
 import com.utils.org.BaseClass;
+
+import junit.framework.Assert;
 
 public class SearchItemRunner extends BaseClass {
 
@@ -14,20 +18,23 @@ public class SearchItemRunner extends BaseClass {
 	@Test
 	public void searchAddToshoppingCart() throws InterruptedException, IOException {
 		si = new SearchItems(driver);
+		test = extent.createTest("SearchAddToshoppingCart");
 		passInput(si.getSearchBox(), "Apple laptop");
 		si.getSearchBox().sendKeys(Keys.ENTER);
-		scrollDownorUp("window.scrollBy(0,1800)");
+		scrollDownorUp("window.scrollBy(0,2000)");
 		si.getListOfProducts("MacBook Air 13.6\" Laptop - Apple M2 chip - 8GB Memory - 512GB SSD - Midnight - Midnight",
 				"Clicked on the target product: ");
 		scrollDownorUp("window.scrollBy(0,2000)");
-		explicitlyWait(15, si.getAddToCart());
 		clickOnElement(si.getAddToCart());
-		explicitlyWait(15, si.getGoToCart());
+		sleep(10000);
 		clickOnElement(si.getGoToCart());
-		takeScreenshot("searchAddToshoppingCart");
+		takeScreenshot("SearchAddToshoppingCart");
 		sleep(3000);
-		pageSource("MacBook Air 13.6\" Laptop - Apple M2 chip - 8GB Memory - 512GB SSD - Midnight - Midnight", "Search Item Product has been added successfully",
-				"Search Item Product not added to the cart");
+		pageSource("MacBook Air 13.6\" Laptop - Apple M2 chip - 8GB Memory - 512GB SSD - Midnight - Midnight",
+				"Search Item Product has been added successfully", "Search Item Product not added to the cart");
+		test.log(Status.PASS, "searchAddToshoppingCart test has been passed successfully");
+		Assert.assertTrue(true);
+
 	}
 
 }

@@ -1,19 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="20" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T14:07:17 IST" name="Suite" finished-at="2024-02-15T14:09:11 IST" duration-ms="114384">
+  <suite started-at="2024-02-17T11:39:16 IST" name="Suite" finished-at="2024-02-17T11:45:26 IST" duration-ms="369778">
     <groups>
     </groups>
-    <test started-at="2024-02-15T14:07:17 IST" name="Test" finished-at="2024-02-15T14:09:11 IST" duration-ms="114384">
+    <test started-at="2024-02-17T11:39:16 IST" name="Test" finished-at="2024-02-17T11:45:26 IST" duration-ms="369778">
+      <class name="com.testscripts.org.ShopByDepartmentRunner">
+        <test-method signature="shopByDepartment()[pri:0, instance:com.testscripts.org.ShopByDepartmentRunner@121314f7]" started-at="2024-02-17T11:42:39 IST" name="shopByDepartment" finished-at="2024-02-17T11:43:33 IST" duration-ms="54233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopByDepartment -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.ShopByDepartmentRunner@121314f7]" started-at="2024-02-17T11:43:33 IST" name="extentFlush" finished-at="2024-02-17T11:43:33 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+      </class> <!-- com.testscripts.org.ShopByDepartmentRunner -->
       <class name="com.testscripts.org.SearchItemRunner">
-        <test-method signature="searchAddToshoppingCart()[pri:0, instance:com.testscripts.org.SearchItemRunner@6253c26]" started-at="2024-02-15T14:08:11 IST" name="searchAddToshoppingCart" finished-at="2024-02-15T14:09:11 IST" duration-ms="60949" status="PASS">
+        <test-method signature="searchAddToshoppingCart()[pri:0, instance:com.testscripts.org.SearchItemRunner@60bd273d]" started-at="2024-02-17T11:41:29 IST" name="searchAddToshoppingCart" finished-at="2024-02-17T11:42:39 IST" duration-ms="69795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAddToshoppingCart -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.SearchItemRunner@60bd273d]" started-at="2024-02-17T11:42:39 IST" name="extentFlush" finished-at="2024-02-17T11:42:39 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
       </class> <!-- com.testscripts.org.SearchItemRunner -->
+      <class name="com.testscripts.org.SignInRunner">
+        <test-method signature="signUpValidCredentials()[pri:0, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:40:44 IST" name="signUpValidCredentials" finished-at="2024-02-17T11:40:58 IST" duration-ms="13945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpValidCredentials -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:40:58 IST" name="extentFlush" finished-at="2024-02-17T11:40:58 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="signUpInValidCredentials()[pri:1, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:40:58 IST" name="signUpInValidCredentials" finished-at="2024-02-17T11:41:12 IST" duration-ms="14181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpInValidCredentials -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:41:12 IST" name="extentFlush" finished-at="2024-02-17T11:41:12 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="signUpEmptyCredentials()[pri:2, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:41:12 IST" name="signUpEmptyCredentials" finished-at="2024-02-17T11:41:28 IST" duration-ms="16076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpEmptyCredentials -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.SignInRunner@534a5a98]" started-at="2024-02-17T11:41:28 IST" name="extentFlush" finished-at="2024-02-17T11:41:28 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+      </class> <!-- com.testscripts.org.SignInRunner -->
+      <class name="com.testscripts.org.CheckoutAndPaymentProcessRunner">
+        <test-method signature="checkoutLoginProcess()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@5e600dd5]" started-at="2024-02-17T11:44:40 IST" name="checkoutLoginProcess" finished-at="2024-02-17T11:44:50 IST" duration-ms="9820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutLoginProcess -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@5e600dd5]" started-at="2024-02-17T11:44:50 IST" name="extentFlush" finished-at="2024-02-17T11:44:50 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="paymentInformation()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@5e600dd5]" started-at="2024-02-17T11:44:50 IST" name="paymentInformation" finished-at="2024-02-17T11:45:24 IST" duration-ms="34668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentInformation -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@5e600dd5]" started-at="2024-02-17T11:45:24 IST" name="extentFlush" finished-at="2024-02-17T11:45:24 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testscripts.org.CheckoutAndPaymentProcessRunner@5e600dd5]" started-at="2024-02-17T11:45:24 IST" name="tearDown" finished-at="2024-02-17T11:45:26 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testscripts.org.CheckoutAndPaymentProcessRunner -->
       <class name="com.testscripts.org.CreateAccountRunner">
-        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:17 IST" name="driverSetup" finished-at="2024-02-15T14:07:22 IST" duration-ms="5098" status="PASS">
+        <test-method is-config="true" signature="extentReport()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:39:16 IST" name="extentReport" finished-at="2024-02-17T11:39:16 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReport -->
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:39:16 IST" name="driverSetup" finished-at="2024-02-17T11:39:22 IST" duration-ms="6495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +90,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:22 IST" name="urlVerify" finished-at="2024-02-15T14:07:31 IST" duration-ms="8386" status="PASS">
+        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:39:22 IST" name="urlVerify" finished-at="2024-02-17T11:39:32 IST" duration-ms="9510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlVerify -->
-        <test-method signature="createAccountValidCredentials(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:07:31 IST" name="createAccountValidCredentials" finished-at="2024-02-15T14:08:02 IST" duration-ms="31668" status="PASS">
+        <test-method signature="createAccountValidCredentials(java.lang.String)[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:39:32 IST" name="createAccountValidCredentials" finished-at="2024-02-17T11:40:06 IST" duration-ms="34142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,15 +105,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountValidCredentials -->
-        <test-method is-config="true" signature="urlVerify()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:08:02 IST" name="urlVerify" finished-at="2024-02-15T14:08:11 IST" duration-ms="8185" status="PASS">
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:06 IST" name="extentFlush" finished-at="2024-02-17T11:40:06 IST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- urlVerify -->
-        <test-method signature="reader()[pri:0, instance:com.testscripts.org.CreateAccountRunner@36916eb0]" started-at="2024-02-15T14:08:11 IST" name="reader" finished-at="2024-02-15T14:08:11 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- extentFlush -->
+        <test-method signature="reader()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:06 IST" name="reader" finished-at="2024-02-17T11:40:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reader -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:06 IST" name="extentFlush" finished-at="2024-02-17T11:40:07 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="createAccountInvalidCredentials(java.lang.String)[pri:1, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:07 IST" name="createAccountInvalidCredentials" finished-at="2024-02-17T11:40:25 IST" duration-ms="18728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7894561231]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountInvalidCredentials -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:25 IST" name="extentFlush" finished-at="2024-02-17T11:40:25 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="createAccountEmptyCredentials()[pri:2, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:25 IST" name="createAccountEmptyCredentials" finished-at="2024-02-17T11:40:43 IST" duration-ms="18015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountEmptyCredentials -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.CreateAccountRunner@73e9cf30]" started-at="2024-02-17T11:40:43 IST" name="extentFlush" finished-at="2024-02-17T11:40:44 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
       </class> <!-- com.testscripts.org.CreateAccountRunner -->
+      <class name="com.testscripts.org.ShopByBrandRunner">
+        <test-method signature="shopByBrands()[pri:0, instance:com.testscripts.org.ShopByBrandRunner@130c12b7]" started-at="2024-02-17T11:43:33 IST" name="shopByBrands" finished-at="2024-02-17T11:44:40 IST" duration-ms="66328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopByBrands -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.ShopByBrandRunner@130c12b7]" started-at="2024-02-17T11:44:40 IST" name="extentFlush" finished-at="2024-02-17T11:44:40 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+      </class> <!-- com.testscripts.org.ShopByBrandRunner -->
+      <class name="com.testscripts.org.MenuValidationRunner">
+        <test-method signature="topLinkVerification()[pri:0, instance:com.testscripts.org.MenuValidationRunner@4f80542f]" started-at="2024-02-17T11:41:28 IST" name="topLinkVerification" finished-at="2024-02-17T11:41:29 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topLinkVerification -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.MenuValidationRunner@4f80542f]" started-at="2024-02-17T11:41:29 IST" name="extentFlush" finished-at="2024-02-17T11:41:29 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+        <test-method signature="bottomLinkVerification()[pri:1, instance:com.testscripts.org.MenuValidationRunner@4f80542f]" started-at="2024-02-17T11:41:29 IST" name="bottomLinkVerification" finished-at="2024-02-17T11:41:29 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bottomLinkVerification -->
+        <test-method is-config="true" signature="extentFlush()[pri:0, instance:com.testscripts.org.MenuValidationRunner@4f80542f]" started-at="2024-02-17T11:41:29 IST" name="extentFlush" finished-at="2024-02-17T11:41:29 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+      </class> <!-- com.testscripts.org.MenuValidationRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

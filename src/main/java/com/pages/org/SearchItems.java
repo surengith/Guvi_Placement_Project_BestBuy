@@ -37,11 +37,12 @@ public class SearchItems extends BaseClass {
 		this.searchBox = searchBox;
 	}
 
-	public void getListOfProducts(String productsName, String sysoMessage) {
+	public void getListOfProducts(String productsName, String sysoMessage) throws InterruptedException {
 		String productName = productsName;
 		for (WebElement productList : listOfProducts) {
 			String productText = productList.getText();
 			if (productText.contains(productName)) {
+				sleep(5000);
 				clickOnElement(productList);
 				System.out.println(sysoMessage + productText);
 				break;

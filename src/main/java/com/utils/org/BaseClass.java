@@ -29,11 +29,34 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeSuite;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class BaseClass {
 
 	public static WebDriver driver;
 	//public static String value;
+	public static ExtentHtmlReporter reporter;
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	
+	@BeforeSuite
+	public void extentReport() {
+		reporter = new ExtentHtmlReporter(
+				"C:\\Users\\Surendhar\\eclipse-workspace\\BestBuy-E-Commerce-Project\\extentreport\\TestReport.html");
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
+	}
+	
+	@AfterMethod
+	public void extentFlush() {
+		extent.flush();
+	}
+	
 
 	public static WebDriver launchBrowser(String browser) {
 		if (browser.equalsIgnoreCase("Chrome")) {
@@ -72,6 +95,7 @@ public class BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(value));
 		wait.until(ExpectedConditions.elementToBeClickable(visibilityOfAllElement));
 	}
+	
 
 	public static void scrollDownorUp(String script) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -170,15 +194,22 @@ public class BaseClass {
 		}
 	}
 
-	public static void takeScreenshot(String location) throws IOException {
+	public static String takeScreenshot(String location) throws IOException {
 		Date d = new Date();
 		String FileName = d.toString().replace(":", "-").replace(" ", "-") + ".png";
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File destination = new File("screenshots" + "\\" + location + FileName + ".png");
+		String path = "screenshots" + "\\" + location + FileName + ".png";
+		File destination = new File(path);
 		FileUtils.copyFile(source, destination);
+		return path;
 	}
 
+	public static void extentScreenshot(String location) throws IOException {
+		test.addScreenCaptureFromPath(takeScreenshot(location));
+	}
+	
+	
 //	public static String ExcelUtils(String sheetName, int rowIndex, int cellIndex) throws IOException {
 //
 //		FileInputStream fis = new FileInputStream(

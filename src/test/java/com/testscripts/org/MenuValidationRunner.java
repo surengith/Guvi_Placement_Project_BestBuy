@@ -1,6 +1,8 @@
 package com.testscripts.org;
 
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.pages.org.MenuValidation;
 import com.utils.org.BaseClass;
 
@@ -13,15 +15,19 @@ public class MenuValidationRunner extends BaseClass {
 	@Test(priority = 0)
 	public void topLinkVerification() {
 		mv = new MenuValidation(driver);
-		mv.getTopLinksVerification("Top menu items: ", "All the top menu links are not verified");
-		Assert.assertTrue("All the top menu links are not verified", true);
+		test = extent.createTest("TopLinkVerification");
+		mv.getTopLinksVerification("Top menu item title for: ");
+		test.log(Status.PASS, "TopLinkVerification test has been passed successfully");
+		Assert.assertTrue(true);
 	}
-	
+
 	@Test(priority = 1)
 	public void bottomLinkVerification() {
 		mv = new MenuValidation(driver);
-		mv.getBottomLinksVerification("Bottom menu items: ", "All the top menu links are not verified");
-		Assert.assertTrue("All the bottom links are not verified", true);
+		test = extent.createTest("BottomLinkVerification");
+		mv.getBottomLinksVerification("Bottom menu items: ");
+		test.log(Status.PASS, "BottomLinkVerification test has been passed successfully");
+		Assert.assertTrue(true);
 	}
-	
+
 }

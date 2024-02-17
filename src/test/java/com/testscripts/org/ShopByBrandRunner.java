@@ -3,8 +3,12 @@ package com.testscripts.org;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.pages.org.ShopByBrands;
 import com.utils.org.BaseClass;
+
+import junit.framework.Assert;
 
 public class ShopByBrandRunner extends BaseClass {
 
@@ -13,6 +17,7 @@ public class ShopByBrandRunner extends BaseClass {
 	@Test
 	public void shopByBrands() throws IOException, InterruptedException {
 		sb = new ShopByBrands(driver);
+		test = extent.createTest("ShopByBrands");
 		sb.getMenuButtonBrands();
 		clickOnElement(sb.getMenuButtonBrands());
 		sb.getShopByBrands("Brands");
@@ -48,11 +53,12 @@ public class ShopByBrandRunner extends BaseClass {
 		clickOnElement(sb.getSelectCameraAddToCart());
 		explicitlyWait(10, sb.getCameraGoToCart());
 		clickOnElement(sb.getCameraGoToCart());
-		takeScreenshot("shopByBrands");
 		sleep(3000);
 		pageSource("Sony - Alpha a7 III Mirrorless [Video]", "Shop by brand Product has been added successfully",
 				"Shop by brand Product not added to the cart");
-
+		takeScreenshot("shopByBrands");
+		test.log(Status.PASS, "shopByBrands test has been passed successfully");
+		Assert.assertTrue(true);
 	}
 
 }

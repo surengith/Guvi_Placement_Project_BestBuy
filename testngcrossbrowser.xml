@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<listeners>
+		<listener class-name="com.Listerners.org.MyListener" />
+	</listeners>
 	<test name="Chrome Test">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
@@ -8,15 +11,17 @@
 				<parameter name="validphonenumber" value="9443352021"></parameter>
 				<parameter name="invalidphonenumber" value="7894561231"></parameter>
 			</class>
-		<class name="com.testscripts.org.SignUpRunner"></class>
+			<class name="com.testscripts.org.SignInRunner"></class>
 			<class name="com.testscripts.org.MenuValidationRunner"></class>
 			<class name="com.testscripts.org.SearchItemRunner"></class>
 			<class name="com.testscripts.org.ShopByDepartmentRunner"></class>
 			<class name="com.testscripts.org.ShopByBrandRunner"></class>
-			<class name="com.testscripts.org.CheckoutAndPaymentProcessRunner"></class> 
+			<class name="com.testscripts.org.CheckoutAndPaymentProcessRunner"></class>
 		</classes>
 	</test>
-
+	<listeners>
+		<listener class-name="com.Listerners.org.MyListener" />
+	</listeners>
 	<test name="Edge Test">
 		<parameter name="browser" value="Edge"></parameter>
 		<classes>
@@ -24,7 +29,7 @@
 				<parameter name="validphonenumber" value="9443352021"></parameter>
 				<parameter name="invalidphonenumber" value="7894561231"></parameter>
 			</class>
-		<class name="com.testscripts.org.SignUpRunner"></class>
+			<class name="com.testscripts.org.SignInRunner"></class>
 			<class name="com.testscripts.org.MenuValidationRunner"></class>
 			<class name="com.testscripts.org.SearchItemRunner"></class>
 			<class name="com.testscripts.org.ShopByDepartmentRunner"></class>

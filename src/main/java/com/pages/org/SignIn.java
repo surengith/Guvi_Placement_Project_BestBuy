@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.utils.org.BaseClass;
 
-public class SignUp extends BaseClass{
+public class SignIn extends BaseClass{
 	
 	public WebDriver driver;
 	
-	public SignUp(WebDriver driver) {
+	public SignIn(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

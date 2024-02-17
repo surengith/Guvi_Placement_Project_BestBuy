@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.utils.org.BaseClass;
 
-public class CheckoutAndPaymentProcess extends BaseClass{
+public class CheckoutAndPaymentProcess extends BaseClass {
 
 	public static WebDriver driver;
 
@@ -32,10 +32,10 @@ public class CheckoutAndPaymentProcess extends BaseClass{
 
 	@FindBy(xpath = "//button[@type='button' and normalize-space()='Continue as Guest']")
 	private WebElement continueToGuest;
-	
-	@FindBy (xpath = "//button[@type='button' and normalize-space()='Switch all to shipping']")
+
+	@FindBy(xpath = "//button[@type='button' and normalize-space()='Switch all to shipping']")
 	private WebElement switchToPickUp;
-	
+
 	@FindBy(xpath = "//input[@id='number']")
 	private WebElement creditCardNumber;
 
@@ -68,11 +68,10 @@ public class CheckoutAndPaymentProcess extends BaseClass{
 
 	@FindBy(xpath = "//span[text()='Place Your Order']")
 	private WebElement placeYourOrder;
-	
+
 	@FindBy(xpath = "//span[text()='Apply']")
 	private WebElement Apply;
-	
-	
+
 	public WebElement getCheckoutButton() {
 		return checkoutButton;
 	}
@@ -189,7 +188,7 @@ public class CheckoutAndPaymentProcess extends BaseClass{
 		return state;
 	}
 
-	public void setState (WebElement state) {
+	public void setState(WebElement state) {
 		this.state = state;
 	}
 
@@ -216,7 +215,5 @@ public class CheckoutAndPaymentProcess extends BaseClass{
 	public void setApply(WebElement apply) {
 		Apply = apply;
 	}
-	
-	
 
 }
